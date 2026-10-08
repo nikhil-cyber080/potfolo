@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Google</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* NAVIGATION */
+
+        nav {
+            height: 60px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 0 25px;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .apps {
+            font-size: 22px;
+            cursor: pointer;
+        }
+
+        .signin {
+            background: #1a73e8;
+            color: white !important;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        .signin:hover {
+            text-decoration: none !important;
+            background: #1557b0;
+        }
+
+
+        /* MAIN */
+
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 150px;
+        }
+
+        /* GOOGLE LOGO */
+
+        .logo {
+            font-size: 90px;
+            font-weight: bold;
+            letter-spacing: -8px;
+            margin-bottom: 35px;
+        }
+
+        .blue {
+            color: #4285f4;
+        }
+
+        .red {
+            color: #ea4335;
+        }
+
+        .yellow {
+            color: #fbbc05;
+        }
+
+        .green {
+            color: #34a853;
+        }
+
+
+        /* SEARCH BOX */
+
+        .search-container {
+            width: 580px;
+            max-width: 90%;
+            height: 46px;
+
+            border: 1px solid #dfe1e5;
+            border-radius: 25px;
+
+            display: flex;
+            align-items: center;
+
+            padding: 0 18px;
+
+            box-shadow: 0 1px 5px rgba(0,0,0,0.08);
+        }
+
+        .search-icon {
+            font-size: 18px;
+            color: #777;
+            margin-right: 12px;
+        }
+
+        .search-container input {
+            flex: 1;
+            border: none;
+            outline: none;
+            font-size: 16px;
+        }
+
+
+        /* BUTTONS */
+
+        .buttons {
+            margin-top: 30px;
+            display: flex;
+            gap: 12px;
+        }
+
+        .buttons button {
+            border: 1px solid transparent;
+            background: #f8f9fa;
+            padding: 11px 18px;
+            border-radius: 4px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .buttons button:hover {
+            border: 1px solid #dadce0;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+        }
+
+
+        /* FOOTER */
+
+        footer {
+            background: #f2f2f2;
+            color: #5f6368;
+            font-size: 14px;
+        }
+
+        .country {
+            padding: 15px 30px;
+            border-bottom: 1px solid #dadce0;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 30px;
+        }
+
+        .footer-links div {
+            display: flex;
+            gap: 25px;
+        }
+
+        .footer-links a {
+            color: #5f6368;
+            text-decoration: none;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
+
+        /* MOBILE RESPONSIVE */
+
+        @media (max-width: 650px) {
+
+            main {
+                padding-top: 100px;
+            }
+
+            .logo {
+                font-size: 65px;
+            }
+
+            .search-container {
+                width: 90%;
+            }
+
+            .buttons {
+                flex-direction: column;
+            }
+
+            .footer-links {
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+            }
+
+            .footer-links div {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+    <!-- NAVIGATION -->
+
+    <nav>
+
+        <a href="#">Gmail</a>
+
+        <a href="#">Images</a>
+
+        <span class="apps">⋮⋮</span>
+
+        <a href="#" class="signin">Sign in</a>
+
+    </nav>
+
+
+    <!-- MAIN CONTENT -->
+
+    <main>
+
+        <!-- GOOGLE LOGO -->
+
+        <div class="logo">
+
+            <span class="blue">G</span>
+            <span class="red">o</span>
+            <span class="yellow">o</span>
+            <span class="blue">g</span>
+            <span class="green">l</span>
+            <span class="red">e</span>
+
+        </div>
+
+
+        <!-- SEARCH BOX -->
+
+        <div class="search-container">
+
+            <span class="search-icon">⌕</span>
+
+            <input
+                type="text"
+                placeholder="Search Google or type a URL"
+            >
+
+        </div>
+
+
+        <!-- BUTTONS -->
+
+        <div class="buttons">
+
+            <button>
+                Google Search
+            </button>
+
+            <button>
+                I'm Feeling Lucky
+            </button>
+
+        </div>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="country">
+            India
+        </div>
+
+
+        <div class="footer-links">
+
+            <div>
+
+                <a href="#">About</a>
+
+                <a href="#">Advertising</a>
+
+                <a href="#">Business</a>
+
+                <a href="#">How Search works</a>
+
+            </div>
+
+
+            <div>
+
+                <a href="#">Privacy</a>
+
+                <a href="#">Terms</a>
+
+                <a href="#">Settings</a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>
